@@ -57,7 +57,7 @@ Connect to Raspberry Pi.
 
 ### Firmware
 
-It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here](https://doc.bigclown.cz/core-module-flashing.html). Or you can use Raspberry Pi like me...
+It's always reccomended to upgrade a firmware on your Core Modules. If you want to perform an upgrade trough your PC, please follow instructions [here](https://doc.bigclown.com/core-module-flashing.html). Or you can use Raspberry Pi like me...
 
 #### Upgrade through Raspberry Pi
 
