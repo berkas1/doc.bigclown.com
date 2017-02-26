@@ -71,7 +71,7 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
   `wget "https://docs.google.com/uc?export=download&id=0B5pXL_JAACMvM284WW9sSFNCWkE" -O bc-workroom-base.binary`
 
-* Get know what 'dfu mode' is [here](https://doc.bigclown.cz/core-module-flashing.html#nahrávání-programu-přes-usb-dfu-bootloader)
+* Get know what 'dfu mode' is [here](https://doc.bigclown.com/core-module-flashing.html)
 
 * Connect Remote unit, switch it to the dfu mode and install new firmware
 
@@ -85,7 +85,7 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
 * Hold the right button on a Base unit untill LED starts blinking
 * Hold the right button on a Remote unit untill LED starts blinking
-* Try press button on a Remote unit and LED on on a Base unit should turns on or off
+* Try press button on a Remote unit and LED on on a Base unit should turn on or off
 
 ### Send and receive few test messages
 
