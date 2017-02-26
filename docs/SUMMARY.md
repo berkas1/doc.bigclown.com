@@ -3,11 +3,17 @@
 
 * [Introduction](README.md)
 
+* [Concept](concept.md)
+
 
 ## Core Module
 
 
 * [Getting Started](core-module.md)
+
+* [Hardware](core-module-hardware.md)
+
+* [SDK Description (API)](core-module-sdk.md)
 
 * [Development Setup](core-module-setup.md)
 
@@ -16,6 +22,16 @@
   * [Ubuntu Desktop](core-module-setup-ubuntu.md)
 
   * [Windows Desktop](core-module-setup-windows.md)
+
+* [Firmware Flashing](core-module-flashing.md)
+
+* [Firmware Development](sdk_tutorial/index.md)
+
+  * [Getting Started and LED Blinking](sdk_tutorial/uvod-a-led.md)
+
+  * [Button and Instance](sdk_tutorial/tlacitko-a-instance.md)
+
+  * [Digital LED Strip](sdk_tutorial/akcelerometr-a-led-pasek.md)
 
 * [API Reference](core-module-api.md)
 
@@ -26,6 +42,27 @@
 * [Headers & Signals](headers.md)
 
 
+## Reference
+
+* [Core Module SDK](http://sdk.bigclown.com)
+
+* [I²C Address Space](i2c-space.md)
+
+
+## Sample Projects
+
+
+* [Smart LED Strip](smart-led-strip.md)
+
+* [Easy Home Auromation Programming](easy-programming.md)
+
+* [Tweeting Doorbell Project](doorbell.md)
+
+* [Workroom Project](workroom.md)
+
+* [Bridge Project](bridge.md)
+
+
 ## Tutorials
 
 
@@ -33,36 +70,11 @@
 
 * [Mosquitto - MQTT Broker](mosquitto.md)
 
-* [BigClown firmware CZ tutoriál](sdk_tutorial/index.md)
-
-  * [Úvod a rozblikání LED](sdk_tutorial/uvod-a-led.md)
-
-  * [Tlačítko a instance](sdk_tutorial/tlacitko-a-instance.md)
-
-## Projects
-
-
-* [Workroom Project](workroom.md)
-
-* [Bridge Project](bridge.md)
-
-* [Tweeting Doorbell Project](doorbell.md)
-
-
-## Integrations
-
-
 * [Blynk - Mobile App Builder](blynk.md)
 
 * [Node RED - Visual Tool for IoT](node-red.md)
 
 * [IFTTT - If This Then That](ifttt.md)
-
-
-## Reference
-
-
-* [I²C Address Space](i2c-space.md)
 
 
 ## Academy
