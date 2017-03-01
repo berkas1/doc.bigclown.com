@@ -20,6 +20,8 @@ This tutorial was tested on Windows 7 Professional x64.
 Download BigClown IDE
 </a>
 
+** IMPORTANT: After installation and automatic start of Visual Studio Code you have to close it and start again. Otherwise the make utility would not work. We are working on fix.**
+
 This installer will take care of installing the following:
 
 * Visual Studio Code IDE
