@@ -11,8 +11,6 @@
 
 * [Getting Started](core-module.md)
 
-<!--* [Hardware](core-module-hardware.md)-->
-
 * [SDK Description (API)](core-module-sdk.md)
 
 * [Development Setup](core-module-setup.md)
