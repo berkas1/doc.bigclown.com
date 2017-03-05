@@ -1,14 +1,15 @@
-# Workroom Project
-
-{%youtube%}EFFVnbwtMNg{%endyoutube%}
+# Smart LED Strip Project
 
 <!-- toc -->
 
 
-## Introduction
+## What is this project about
 
-With this setup you will be able to monitor environmental conditions in your workroom.
-Project will periodically measure relative humidity and temperature.
+It is a very simple project, which aims at building a simple home automation.
+The result of the project is a smart LED strip placed in a prominent place in the living room (in our case on TV), which you can control remotely from your phone or tablet and which changes colors according to the measured temperature and humidity.
+Besides this handy alerting of inappropriate conditions, it also serves as a decent colorful decoration of the living room.
+You can obviously use it for controlling other appliances, like a fan, garage door opener or a bedside lamp.
+
 If one of these values are out of proper range, project will indicate it on a programmable LED strip by a change of color.
 
 The color codes are as following:
@@ -19,9 +20,8 @@ The color codes are as following:
 * The color is blue if the temperature is too low (< 22°C).
 
 Any of these limit values can be adjusted in configuration (later we will show you how).
-Besides this primary function the project may also serve as a pleasant lighting on your desk or can be modified for other purposes.
 
-Workroom project consists of two units described below.
+Smart LED Strip project consists of two units described below.
 
 
 ### Base unit
@@ -41,7 +41,7 @@ The whole concept is best described by the following diagram:
 
 ## Requirements
 
-All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/workroom-project-collection) in our e-shop.
+All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/smart-led-strip-set) in our e-shop.
 If you buy core modules as a separate items, you have to program them [using this Core module tutorial](core-module.md).
 
 Individual components in the set are:
@@ -72,13 +72,6 @@ You will also need:
 
 
 ## Installation instructions
-
-* You can either follow the step-by-step instructions in the text below or watch this short video:
-
-  {%youtube%}Azui3VXtKJA{%endyoutube%}
-
-
-You can also follow these step by step instructions:
 
 1. *Build your Remote unit*
 

@@ -1,57 +1,47 @@
 # BigClown development on Windows
 
+
 <!-- toc -->
 
 
 ## Introduction
 
 
-Our software stack and SDK can be easily run also on Windows.
+Our software stack and SDK can be easily run also on Windows with our IDE.
 With few simple steps you can develop and test firmware, MQTT messages and more on Windows.
 This tutorial was tested on Windows 7 Professional x64.
 
 
-## How to download SDK
+## How to download IDE
 
 
-All our code is located on public GitHub account. You have to use GIT to clone the repository.
+<a href="https://github.com/bigclownlabs/bc-windows-ide/releases">
+<img src="images/core-module-setup-windows/download.png" width="50"/>
+Download BigClown IDE
+</a>
 
-Download [command line GIT utility](https://git-scm.com/download/win) or you can use [GitHub Desktop](https://desktop.github.com/) with easy graphical interface.
+** IMPORTANT: After installation and automatic start of Visual Studio Code you have to close it and start again. Otherwise the make utility would not work. We are working on fix.**
 
-Clone repository `https://github.com/bigclownlabs/bc-core-module` to your machine.
-You have to call clone with `--recursive` to clone also the submodules.
+This installer will take care of installing the following:
 
-`git clone --recursive https://github.com/bigclownlabs/bc-core-module.git`
-
-
-*GIT tools are not extra necessary but it helps you update to the latest versions of our SDK. You can also download SDK in ZIP file from the GitHub. In that case you have to download submodules separately and unzip them in their respective folders (bcl, doc, stm, sys).*
-
-
-## How to install compiler
-
-
-It's not necessary to be able compile firmwares for microcontroller.
-You can use our pre-compiled binaries if the fits your needs.
-In that case you would just need the DFU firmware flashing utility and drivers which is explained further.
-
-Otherwise download latest [GNU ARM Embedded Toolchain](https://launchpad.net/gcc-arm-embedded/+download) for Windows.
-We would suggest the installer because it is easiest solution. Install the GCC compiler and in the last wizard screen after the instalation **select that you would like to add the tools to the PATH environment variable.**
+* Visual Studio Code IDE
+* GIT command line utility to automatically get the latest SDK
+* ARM-GCC compiler for Windows
+* dfu-util for flashing firmware over USB
 
 
-## How to install buildsystem
-
-
-You will need `make` tool to compile our SDK. There is not simple installer yet so you have to download and copy it manually.
-
-You have to download compiled make utility from [this page](http://www.equation.com/servlet/equation.cmd?fa=make) and then copy it to to some directory which is already in the PATH variable. So you can call `make` from any folder. You can copy it to your newly created GCC ARM Toolchain folder (`C:\Program Files (x86)\GNU Tools ARM Embedded\5.4 2016q3\bin\`).
-
+<a href="images/core-module-setup-windows/vscode.png">
+<img src="images/core-module-setup-windows/vscode.png" width="400" alt="Visual studio code" />
+</a>
 
 ## How to compile SDK
 
 
-Now you can compile the SDK by typing `make` in a project directory.
+Run the BigClown IDE. There will be opened simple code skeleton with.
+Now you can compile the code by pressing `Ctrl + Shift + B`.
 
-The downloaded GitHub firmware has empty user function. Please see the tutorials and add you application logic in `app/application.c`.
+The downloaded GitHub firmware has a simple code which toggles the LED when you press the `B` button on Core Module. You can also see the [default example code on GitHub](https://github.com/bigclownlabs/bc-core-module/blob/master/app/application.c).
+Please see the tutorials and add you application logic in `app/application.c`.
 
 Congratulation for your first compiled firmware.
 
@@ -59,11 +49,18 @@ Congratulation for your first compiled firmware.
 ## How to upload firmware over USB
 
 
+After compiling the firmware. Press `Ctrl + Shift + P` in the Visual Studio code. The cursor will jump to the top command line. Press the backspace to delete the `>` symbol. Now write `task` and it will display you all the make targets the Makefile contains. We are interested in the `dfu` task. So execute command `task dfu`.
+
+
+<img src="images/core-module-setup-windows/task-dfu.png" alt="Visual studio code" />
+
+
 This Device Firmware Update utility (`dfu-util`) will allow you to upload compiled binary firmware just with USB.
 Please follow this help [how to setup USB driver and use DFU Util on Windows](https://doc.bigclown.com/core-module.html#on-windows-10-64-bit-desktop).
-If you have the dfu-util in your PATH variable or you copy it to the GCC bin directory, you can then [set the device to the boot mode](https://doc.bigclown.com/core-module.html#programming-using-usb-dfu-bootloader) and flash the firmware.
 
-Set the device to DFU mode and flash it by typing `make dfu`.
+[Do not forget to set the device to the boot mode](https://doc.bigclown.com/core-module.html#programming-using-usb-dfu-bootloader).
+
+If you use command line then set the device to DFU mode and flash it by typing `make dfu`.
 
 
 ## How to debug core module
@@ -74,7 +71,7 @@ To debug the running code on Core Module you can use Ozone debugger with J-Link 
 Download the [Ozone debugger here](https://www.segger.com/downloads/jlink#Ozone).
 Ozone folder also needs to be set in PATH environment variable or you can simply edit Makefile and set absolute path to the Ozone.exe file.
 
-You start debugging by typing `make ozone`.
+You start debugging by typing `make ozone` in the command line or `Ctrl+Shift+P` and typing `task ozone` in the Visual Studio Code.
 
 
 ## How to generate API documentation
@@ -115,8 +112,6 @@ This section explains how to set up these pieces.
 Clone bc-workroom-hub
 
 `git clone https://github.com/bigclownlabs/bc-workroom-hub.git`
-
-**Current bc-workroom-gateway.py needs that you comment out two lines of code where we use fcntl. Will be fixed in next revision**
 
 Then run the script with the correct COM port set.
 
