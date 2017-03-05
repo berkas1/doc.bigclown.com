@@ -3,7 +3,7 @@
 
 * [Introduction](README.md)
 
-* [Concept](concept.md)
+<!--* [Concept](concept.md)-->
 
 
 ## Core Module
@@ -11,7 +11,7 @@
 
 * [Getting Started](core-module.md)
 
-* [Hardware](core-module-hardware.md)
+<!--* [Hardware](core-module-hardware.md)-->
 
 * [SDK Description (API)](core-module-sdk.md)
 
