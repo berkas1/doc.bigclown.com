@@ -272,19 +272,19 @@ This is a brief description of changes:
 
 6. Now you can install the individual packages:
 
-   * Basic package for Workroom project (hardware interface):
+   * Basic package for Smart LED Strip (Workroom) project (hardware interface):
 
      ```
      sudo apt-get install bc-workroom-gateway
      ```
 
-   * LED strip plugin for Workroom project:
+   * LED strip plugin for Smart LED Strip (Workroom) project:
 
      ```
      sudo apt-get install bc-workroom-led-strip
      ```
 
-   * Blynk plugin for Workroom project:
+   * Blynk plugin for Smart LED Strip (Workroom) project:
 
      ```
      sudo apt-get install bc-workroom-blynk

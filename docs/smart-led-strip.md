@@ -42,7 +42,10 @@ The whole concept is best described by the following diagram:
 ## Requirements
 
 All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/smart-led-strip-set) in our e-shop.
-If you buy core modules as a separate items, you have to program them [using this Core module tutorial](core-module.md).
+If you buy core modules as a separate items, you have to program them [using this Core module tutorial](https://doc.bigclown.com/core-module-flashing.html#using-usb-cable-and-integrated-bootloader).
+Firmware for Base and Remote younit is [here](https://doc.bigclown.com/core-module-flashing.html#firmware-files).
+If you want to use your own Raspberry Pi, see the tutorial [Install BigClown Packages on Existing System](https://doc.bigclown.com/raspberry-pi-installation.html#install-bigclown-packages-on-existing-system) 
+or use [our image](https://doc.bigclown.com/raspberry-pi-installation.html#prepare-the-microsd-card) with pre-installed system including BigClown packages.
 
 Individual components in the set are:
 

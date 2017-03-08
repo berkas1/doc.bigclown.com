@@ -158,14 +158,14 @@ It is possible to build your own firmware.
 But not until we release the source codes on our [GitHub account](https://github.com/bigclownlabs).
 We still want to polish a few things to provide you with a proper start.
 
-So far you can download two binary files for [Workroom project](workroom.md):
+So far you can download two binary files for [Smart LED Strip (Workroom) project](smart-led-strip.md):
 
 * [Base unit](https://drive.google.com/open?id=0B5pXL_JAACMvM284WW9sSFNCWkE)
 
 * [Remote unit](https://drive.google.com/open?id=0B5pXL_JAACMvVkNRT2dPd1VJRlE)
 
 
-## Workroom Remote Firmware Features
+## Smart LED Strip (Workroom) Remote Firmware Features
 
 * Automatic sending of temperature and humidity every 30 seconds
 
