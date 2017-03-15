@@ -160,9 +160,7 @@ We still want to polish a few things to provide you with a proper start.
 
 So far you can download two binary files for [Smart LED Strip (Workroom) project](smart-led-strip.md):
 
-* [Base unit](https://drive.google.com/open?id=0B5pXL_JAACMvM284WW9sSFNCWkE)
-
-* [Remote unit](https://drive.google.com/open?id=0B5pXL_JAACMvVkNRT2dPd1VJRlE)
+* [Base unit a Remote unit](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest)
 
 
 ## Smart LED Strip (Workroom) Remote Firmware Features
