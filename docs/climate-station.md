@@ -18,7 +18,7 @@ The basis of this project is unit assembled from:
 * 1x Lux Meter Tag
 * 1x LED Strip 
 
-![](images/workroom/BigClown Web-Projects-Instructions-ClimateStation_4.png)
+![](docs/images/workroom/BigClown Web-Projects-Instructions-ClimateStation_4.png)
 
 To build your original LED thermometer you will need:
 
