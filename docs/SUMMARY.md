@@ -60,6 +60,8 @@
 
 * [Bridge Project](bridge.md)
 
+* [Climate Station with LED Thermometer and Dashboard](climate-station.md)
+
 
 ## Tutorials
 
