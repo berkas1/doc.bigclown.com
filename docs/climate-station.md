@@ -190,28 +190,28 @@ sudo systemctl start mqtt_to_influxdb.service
 
 #### Grafana settings
 
-* Pripoj se na grafanu [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` a Password `admin`
+* Log in to Grafana [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` and Password `admin`
 
-* Vytvoření datasource
+* Creation of datasource
 
-  * Klikneme na `Add data source` a vyplníme následující hodnoty:
+  * Click on `Add data source` and fill in following values:
     * Name: node
     * Type: InfluxDB
     * Url: http://localhost:8086
     * Database: node
 
-  * Klikneme na `Add`, Grafana se pokusí připojit na InfluxDB - úspěch oznámí takovouto hláškou `Data source is working`
+  * Click on `Add`, Grafana will try to connect to InfluxDB - succesful connection will be followed by this announcement  `Data source is working`
 
-* Import dashboardu
+* Dashboard import
 
-  * Vlevo nahoře klikneme na ikonku Grafany, vybereme `Dashboard` a `Import`
+  * In upper left corner click on Grafana icon and select `Dashboard` and `Import`
 
-  * Stáhněte si do počítače soubor s dashboardem [https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json](https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json)
+  * Download to your PC file with dashboard [https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json](https://raw.githubusercontent.com/bigclownlabs/bcp-climate-station/master/hub/grafana-climate-station.json)
 
-  * Vybereme možnost `Upload .json File` a vybereme stažený json file, teď už jen zvolíme `node` ze seznamu dostupných datasource, to je ten, který jsme si před chvílí vytvořili.
+  * Select option `Upload .json File` and choose downloaded json file. Then select `node` from the list of avalaible datasources (the one we created).
 
-  * A klikneme na `Import`
+  * Click on `Import`
 
-  * Nyní bys měl vidět naměřené hodnoty.
+  * You should see measured data.
 
 
