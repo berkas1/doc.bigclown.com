@@ -188,7 +188,7 @@ sudo systemctl enable mqtt_to_influxdb.service
 sudo systemctl start mqtt_to_influxdb.service
 ```
 
-#### Grafana settings
+### Grafana settings
 
 * Log in to Grafana [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` and Password `admin`
 
