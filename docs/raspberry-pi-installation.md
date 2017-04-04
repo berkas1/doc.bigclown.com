@@ -203,7 +203,7 @@ For security and stability reasons it is wise to keep your system updated.
 Run this command to update the system:
 
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 ```
 
 
@@ -249,7 +249,7 @@ This is a brief description of changes:
 2. Install dependencies:
 
    ```
-   sudo apt-get install apt-transport-https wget
+   sudo apt install apt-transport-https wget
    ```
 
 3. Add BigClown APT repository to sources list:
@@ -267,7 +267,7 @@ This is a brief description of changes:
 5. Update your existing installation:
 
    ```
-   sudo apt-get update && sudo apt-get upgrade
+   sudo apt update && sudo apt upgrade
    ```
 
 6. Now you can install the individual packages:
@@ -275,17 +275,17 @@ This is a brief description of changes:
    * Basic package for Smart LED Strip (Workroom) project (hardware interface):
 
      ```
-     sudo apt-get install bc-workroom-gateway
+     sudo apt install bc-workroom-gateway
      ```
 
    * LED strip plugin for Smart LED Strip (Workroom) project:
 
      ```
-     sudo apt-get install bc-workroom-led-strip
+     sudo apt install bc-workroom-led-strip
      ```
 
    * Blynk plugin for Smart LED Strip (Workroom) project:
 
      ```
-     sudo apt-get install bc-workroom-blynk
+     sudo apt install bc-workroom-blynk
      ```

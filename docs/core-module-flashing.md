@@ -125,7 +125,7 @@ In the chapters below we will show you how to program the firmware on individual
 
 3. Install `dfu-util` package by the following command:
 
-   `sudo apt-get install dfu-util`
+   `sudo apt install dfu-util`
 
 4. Program the firmware to Core Module by the following command:
 

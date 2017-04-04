@@ -27,13 +27,13 @@ This section will guide you through GCC ARM Embedded toolchain installation on y
 2. Update the package lists:
 
    ```
-   sudo apt-get update
+   sudo apt update
    ```
 
 3. Download and install ARM GCC compiler package:
 
    ```
-   sudo apt-get install gcc-arm-embedded
+   sudo apt install gcc-arm-embedded
    ```
 
 4. Verify that the ARM GCC compiler has installed correctly:
@@ -61,7 +61,7 @@ This section will guide you through the BigClown Core Module firmware build proc
 1. Get necessary packages (`git` + `make`):
 
    ```
-   sudo apt-get install git build-essential
+   sudo apt install git build-essential
    ```
 
 2. Clone BigClown Core Module top-level repository:

@@ -160,7 +160,7 @@ How-to communicate with MQTT broker:
 3. Update your existing installation:
 
    ```
-   sudo apt-get update && sudo apt-get upgrade
+   sudo apt update && sudo apt upgrade
    ```
 
 4. Show measurements from remote (reported every 30 seconds):

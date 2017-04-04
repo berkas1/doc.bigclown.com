@@ -34,7 +34,7 @@ You can use preconfigured Raspberry Pi from BigClown, but feel free to use your 
 
 Perform an upgrade and install Node-RED:
 
-  `sudo apt-get update && sudo apt-get upgrade`
+  `sudo apt update && sudo apt upgrade`
   `sudo npm install -g node-red`
 
 #### You own Raspberry Pi
@@ -47,10 +47,10 @@ Perform an upgrade and install Node-RED:
   `sudo apt install -y nodejs`
 
 * Install Node-RED `sudo npm install -g node-red`
-* Install MQTT broker `sudo apt-get install mosquitto mosquitto-clients`
+* Install MQTT broker `sudo apt install mosquitto mosquitto-clients`
 * Install a gateway which serves communication between MQTT and units
 
-  `sudo apt-get install bc-workroom-gateway`
+  `sudo apt install bc-workroom-gateway`
 
 Connect to Raspberry Pi.
 
@@ -63,7 +63,7 @@ It's always reccomended to upgrade a firmware on your Core Modules. If you want 
 
 * Install a tool for an upgrade
 
-  `sudo apt-get install dfu-util`
+  `sudo apt install dfu-util`
 
 * Download actual version of the firmware
 
