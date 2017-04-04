@@ -18,12 +18,6 @@ The basis of this project is unit assembled from:
 * 1x Lux Meter Tag
 * 1x LED Strip 
 
-![](docs/images/workroom/BigClown Web-Projects-Instructions-ClimateStation_4.png)
-
-To build your original LED thermometer you will need:
-
-* Al strip
-* Sticker with the scale
 
 You will also need:
 
@@ -42,11 +36,6 @@ You will also need:
 5. Connect LED Strip to Power Module
 6. Connect AC adapter to Power Module
 
-## How to build LED thermometer
-
-1. Get your [Al strip] (http://.....)
-2. Insert LED strip to Al strip
-3. Glue and trim sticker with scale 
 
 ## How to install and connect Grafana application
 
