@@ -104,14 +104,14 @@ sudo systemctl start grafana-server
 
 ### Gateway between USB and MQTT broker
 
-* Pokud používáš Raspberry od nás nebo sis nahrál náš [bc-raspbian](https://github.com/bigclownlabs/bc-raspbian/releases/latest) použij tyto příkazy:
+* If you are using our Raspberry Pi or you have downloaded our [bc-raspbian](https://github.com/bigclownlabs/bc-raspbian/releases/latest), then use these commands:
 
   ```
   sudo systemctl disable bc-workroom-gateway.service
   sudo systemctl stop bc-workroom-gateway.service
   ```
 
-* Pokud máš svůj Raspbian, je nutné si přidat náš repozitář, co který řádek provádí je popsáno [zde](https://doc.bigclown.cz/raspberry-pi-installation.html#instalace-bigclown-balíčků-na-existující-systém):
+* If you have your own Raspbian, then you have to add our repository:
 
   ```
   sudo apt install wget
@@ -121,7 +121,7 @@ sudo systemctl start grafana-server
   sudo apt install mosquitto bc-common python3-docopt python3-paho-mqtt python3-serial
   ```
 
-Společné
+For both cases:
 ```
 sudo apt install mosquitto-clients
 wget "https://raw.githubusercontent.com/bigclownlabs/bch-gateway/master/bc-gateway.py" -O bc-gateway
@@ -134,44 +134,44 @@ sudo systemctl enable bc-gateway.service
 sudo systemctl start bc-gateway.service
 ```
 
-Test funkčnosti
+Funcionality test:
 
-* Zapneme LED na core
+* Turn on LED on Core Module
   ```
   mosquitto_pub -t 'node/climate-station/led/-/state/set' -m true
   ```
 
-* Vypneme  LED na core
+* Turn off LED on Core Module
   ```
   mosquitto_pub -t 'node/climate-station/led/-/state/set' -m false
   ```
 
-* Zapneme relátko
+* Turn on relay on Power Module
   ```
   mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m true
   ```
-  > **Hint** První pomoc:
-  Pokud relé neseplo, tak zkontroluj zda jsi připojil 5V DC adaptér do Power Modulu
+  > **Hint** First aid:
+  If relay doesn't work, then check-out if AC/DC Adpater is connected to Power Module
 
-* Vypneme  relátko
+* Turn off relay
   ```
   mosquitto_pub -t 'node/climate-station/relay/-/state/set' -m false
   ```
-* Zobrazíme si všechny zprávy na mqtt (ukončíte ctrl+c)
+* Display all MQTT messages (for termination press ctrl+c)
   ```
   mosquitto_sub -v -t '#'
   ```
 
-### Vytvoření databáze node v InfluxDB
+### Database creation in InfluxDB
 ```
 curl -s "http://localhost:8086/query?q=CREATE+DATABASE+%22node%22&db=_internal"
 ```
-kontrola zda došlo k vytvoření
+To check out if database was created
 ```
 curl -s "http://localhost:8086/query?q=SHOW+DATABASES&db=_internal" | grep \"node\"
 ```
 
-### Spuštění služby která bude překopírovávat data z MQTT do InfluxDB
+### Run service of copying MQTT data to InfluxDB
 
 ```
 sudo apt install python3-pip
@@ -188,7 +188,7 @@ sudo systemctl enable mqtt_to_influxdb.service
 sudo systemctl start mqtt_to_influxdb.service
 ```
 
-#### Nastavení Grafany
+#### Grafana settings
 
 * Pripoj se na grafanu [http://ip-raspberry:3000](http://ip-raspberry:3000)  User `admin` a Password `admin`
 
