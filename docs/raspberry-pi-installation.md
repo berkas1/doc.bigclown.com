@@ -32,7 +32,7 @@ We will install BigClown's version of Raspbian - the official and the most popul
 
 1. Insert the MicroSD card to the MicroSD card reader.
 
-2. Download the latest release of BigClown's Raspbian image from [this link](https://github.com/bigclownlabs/bc-raspbian/releases/download/v1.0.1/{{ raspbian_zip }}).
+2. Download the latest release of BigClown's Raspbian image from https://github.com/bigclownlabs/bc-raspbian/releases.
 
 
 ### From Windows Desktop
