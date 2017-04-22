@@ -98,8 +98,8 @@ Mosquitto is a MQTT broker which is the central hub of BigClown communication. P
 ## Install Gateway
 
 
-Gateway is a simple Python script which is connecting serial port and MQTT together. Clone `bc-workroom-hub` repository
+Gateway is a simple Python script which is connecting serial port and MQTT together. Clone `bch-gateway` repository
 
-``https://github.com/bigclownlabs/bc-workroom-hub``
+``https://github.com/bigclownlabs/bch-gateway``
 
-And run the script `bc-workroom-gateway.py` in the gateway folder.
+And run the script `bc-gateway.py` in the gateway folder.
