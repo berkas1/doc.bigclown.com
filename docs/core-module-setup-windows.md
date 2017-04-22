@@ -86,12 +86,14 @@ You generate the docs by `make doc`.
 
 ## How to install virtual COM port driver
 
-
+This step is not necessary when you used the BigClown IDE installer.
 Download and install the [STM32 Virtual COM Port driver](https://drive.google.com/open?id=0B5pXL_JAACMvczQ0MVM1eUZILXc). You can also download latest driver [directly from ST](http://www.st.com/en/development-tools/stsw-stm32102.html) but you will need to register.
 
 
 ## How to install Mosquitto MQTT broker
 
+
+Mosquitto is not necessary for firmware development, but if you would like to send messages over USB to your computer or network you need to install and run it.  
 
 [Mosquitto MQTT Broker](https://mosquitto.org/download/) is a MQTT server which is a central message hub in our system. Please download, install and run this broker. This broker needs to be running in the background all the time you use our Python Gateway.
 
@@ -108,13 +110,13 @@ Connected core module appears as a USB serial device in your computer.
 The python gateway script interconnects the core module with MQTT broker.
 This section explains how to set up these pieces.
 
-Clone bc-workroom-hub (Smart LED Strip project)
+Clone https://github.com/bigclownlabs/bch-gateway repository.
 
-`git clone https://github.com/bigclownlabs/bc-workroom-hub.git`
+`git clone https://github.com/bigclownlabs/bch-gateway.git`
 
 Then run the script with the correct COM port set.
 
-`python gateway/bc-workroom-gateway.py -d COM2`
+`python bc-gateway.py -d COM2`
 
 
 ## Congratulations!
