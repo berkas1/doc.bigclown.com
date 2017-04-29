@@ -289,3 +289,29 @@ This is a brief description of changes:
      ```
      sudo apt install bc-workroom-blynk
      ```
+
+## Connect Raspberry Pi 3 to WiFi network
+
+
+Raspberry Pi version 3 enables connecting to WiFi network.
+
+Open configuration file for WiFi settings:
+
+```
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+Use the following template to configure desired settings:
+
+```
+network={
+    ssid="WiFi_Network_Name"
+    psk="WiFi_Network_Password"
+}
+```
+
+Save the file (Ctrl+X), confirm changes (y) and with Enter the content will be saved, then restart Raspberry Pi:
+
+```
+sudo reboot
+```
