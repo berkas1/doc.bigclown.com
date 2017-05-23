@@ -7,19 +7,14 @@
 
 It is a very simple project, which aims at building a simple home automation.
 The result of the project is a smart LED strip placed in a prominent place in the living room (in our case on TV), which you can control remotely from your phone or tablet and which changes colors according to the measured temperature and humidity.
-Besides this handy alerting of inappropriate conditions, it also serves as a decent colorful decoration of the living room.
-You can obviously use it for controlling other appliances, like a fan, garage door opener or a bedside lamp.
+Besides this handy alerting of inappropriate conditions, it also serves as a decent colorful decoration of the living room. The project set contains 100cm 15watts addressable LED strip compound of 144 RGBW emmiters, which deliver enough light power for general lighting (etc. comfort lighting of your working place)
+You can obviously use it for controlling other appliances using power relay, like a fan, garage door opener or a bedside lamp.
 
-If one of these values are out of proper range, project will indicate it on a programmable LED strip by a change of color.
 
-The color codes are as following:
+At default state, the LED strip indicates proper temperature and humidity range with color change.
+In this project you will learn how to change theese limites or how to chreate your own automation rules.
+We will show you how to control the Smart LED strip using MQTT commands and smarphone aplication called Blynk.
 
-* The color is green if the humidity is too high (> 60%).
-* The color is yellow if the humidity is too low (< 30%).
-* The color is red if the temperature is too high (> 26°C).
-* The color is blue if the temperature is too low (< 22°C).
-
-Any of these limit values can be adjusted in configuration (later we will show you how).
 
 Smart LED Strip project consists of two units described below.
 
@@ -28,11 +23,15 @@ Smart LED Strip project consists of two units described below.
 
 This unit is responsible for driving of the LED strip and receiving wireless data from Remote unit.
 Wireless data are dispatched from Base unit to Raspberry Pi which decides about the color of the connected LED strip.
+The Base can be used independently on Remote unit, for example for light control and power relay control from your smartphone.
 
+![](images/smart-led-strip/unit-base.png)
 
 ### Remote unit
 
-Remote unit is a battery-operated wireless node measuring temperature and humidity and transmitting these data to Base unit in regular 30-second intervals.
+Remote unit is a battery-operated wireless node (using 868 MHz band) measuring temperature and humidity and transmitting these data to Base unit in regular 30-second intervals.
+
+![](images/smart-led-strip/unit-remote.png)
 
 The whole concept is best described by the following diagram:
 
@@ -43,36 +42,41 @@ The whole concept is best described by the following diagram:
 
 All items can be purchased as a [pre-installed set](https://shop.bigclown.com/products/smart-led-strip-set) in our e-shop.
 If you buy core modules as a separate items, you have to program them [using this Core module tutorial](https://doc.bigclown.com/core-module-flashing.html#using-usb-cable-and-integrated-bootloader).
-Firmware for Base and Remote younit is [here](https://doc.bigclown.com/core-module-flashing.html#firmware-files).
-If you want to use your own Raspberry Pi, see the tutorial [Install BigClown Packages on Existing System](https://doc.bigclown.com/raspberry-pi-installation.html#install-bigclown-packages-on-existing-system) 
+Actual firmware for Base and Remote unit is [here](https://github.com/bigclownlabs/bcp-wireless-circus/releases/latest).
+If you want to use your own Raspberry Pi, see the tutorial [Install BigClown Packages on Existing System](https://doc.bigclown.com/raspberry-pi-installation.html#install-bigclown-packages-on-existing-system)
 or use [our image](https://doc.bigclown.com/raspberry-pi-installation.html#prepare-the-microsd-card) with pre-installed system including BigClown packages.
 
 Individual components in the set are:
 
-* 2x Core Module
+Base unit:
+* 1x Base Module
+* 1x Power Module
+* 1x Core Module s Base unit firmwarem
+
+Remote unit:
+* 1x Battery Module
+* 1x Core Module s Remote unit firmwarem
+* 1x Tag Module
 * 1x Temperature Tag
 * 1x Humidity Tag
-* 1x Tag Module
-* 1x Power Module
-* 1x Battery Module
-* 1x Base Module
-* 1× LED strip RGBW (1m / 144 LEDs)
+* 1× LED strip RGBW (1m / 144 LED)
 * 1x Raspberry Pi 3
 * 1x 8 GB MicroSD card with pre-installed system
-* 1x Enclosure for Raspberry Pi 3
+* 1x 1x Enclosure for Raspberry Pi 3
 * 1x USB 2.0 cable A/Micro-B
-* 1x Power adapter for Raspberry Pi 3
-* 1x Power adapter for Power Module
+* 1x Power adapter 5V/2A for Raspberry Pi 3
+* 1x Power adapter 5V/3A for Power Module
 
 ![](images/workroom/workroom-set.png)
 
 You will also need:
 
-* Desktop/laptop computer
+* Desktop/laptop computer with Windows, MacOS or Linux
 * Ethernet cable
 * LAN router/switch with one available port
 * Internet connectivity
 
+****** TODO
 
 ## Installation instructions
 
