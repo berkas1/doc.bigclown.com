@@ -1,4 +1,4 @@
-# BigClown Repository doc.bigclown.com
+# BigClown Repository doc.bigclown.com (locked)
 
 This repository is a source for BigClown Documentation site.
 Please follow this link if you want to see the generated documentation:
